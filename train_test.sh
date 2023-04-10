@@ -10,7 +10,7 @@ export MKL_NUM_THREADS=16
 echo "###############################"
 echo "Step 1: normal training on data/drone2021"
 echo "###############################"
-bash tools/train.sh  configs/mva2023_baseline/centernet_resnet18_140e_coco.py
+bash tools/dist_train.sh  configs/mva2023_baseline/centernet_resnet18_140e_coco.py $GPU_NUM
 
 
 ###############################
